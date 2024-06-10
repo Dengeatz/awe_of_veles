@@ -15,12 +15,10 @@ namespace Player
         [SerializeField] 
         private protected float smoothing = 1f;
         [SerializeField] 
-        public Animation anim;
-        [SerializeField] 
         private protected GameObject _camera_parent;
         [SerializeField]
         private protected GameObject _player;
-        // CameraShake
+
         
 
         private protected Rigidbody rb;

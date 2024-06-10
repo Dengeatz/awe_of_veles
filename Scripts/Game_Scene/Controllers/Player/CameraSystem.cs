@@ -27,7 +27,7 @@ public class DefaultCameraSystemWithBobbing : CameraSystem
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 0.5f / smoothing);
         mouseLook += smoothV;
         mouseLook.y = Mathf.Clamp(mouseLook.y, -60f, 60f);
-        _camera.transform.rotation = Quaternion.Euler(-mouseLook.y, mouseLook.x, -Horizontal * 5);
+        _camera.transform.rotation = Quaternion.Euler(-mouseLook.y, mouseLook.x, -Horizontal * 1);
         _player.transform.rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
     }
 }

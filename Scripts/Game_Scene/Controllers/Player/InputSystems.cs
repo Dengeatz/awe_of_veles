@@ -4,12 +4,12 @@ using UnityEngine;
 
 public interface IInputSystems
 {
-    public void Move(float speed, GameObject _player, Animation anim);
+    public void Move(float speed, GameObject _player);
 }
 
 public abstract class InputSystems : MonoBehaviour, IInputSystems
 {
-    public abstract void Move(float speed, GameObject _player, Animation anim);
+    public abstract void Move(float speed, GameObject _player);
 }
 
 
@@ -20,7 +20,7 @@ public class KeyboardDefaultInputSystem : InputSystems
     private float speed;
     private GameObject _player;
 
-    public override void Move(float speed, GameObject _player, Animation anim)
+    public override void Move(float speed, GameObject _player)
     {
         this.speed = speed;
         this._player = _player;

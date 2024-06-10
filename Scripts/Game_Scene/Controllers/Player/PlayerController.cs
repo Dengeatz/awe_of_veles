@@ -22,7 +22,7 @@ namespace Player
         void Update()
         {
 
-            _inputSystem.Move(speed, this.gameObject, anim);
+            _inputSystem.Move(speed, this.gameObject);
             _cameraSystem.Camera_Rotate(sensitivity, smoothing, _camera_parent, _player);
 
         }
