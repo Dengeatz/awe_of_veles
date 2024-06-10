@@ -29,10 +29,12 @@ public class KeyboardDefaultInputSystem : InputSystems
         if (Vertical != 0)
         {
             Forward();
+
         }
         if (Horizontal != 0)
         {
             Right();
+
         }
 
     }

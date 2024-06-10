@@ -18,6 +18,8 @@ namespace Player
         public Animation anim;
         [SerializeField] 
         private protected GameObject _camera_parent;
+        [SerializeField]
+        private protected GameObject _player;
         // CameraShake
         
 
